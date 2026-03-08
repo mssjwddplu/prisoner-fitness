@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect width="512" height="512" rx="112" fill="#18181b"/>
+  <g transform="translate(256,256) rotate(45) translate(-256,-256)">
+    <!-- Left outer weight -->
+    <rect x="60" y="216" width="72" height="80" rx="16" fill="#f97316"/>
+    <!-- Right outer weight -->
+    <rect x="380" y="216" width="72" height="80" rx="16" fill="#f97316"/>
+    <!-- Left inner collar -->
+    <rect x="130" y="228" width="36" height="56" rx="8" fill="#f97316"/>
+    <!-- Right inner collar -->
+    <rect x="346" y="228" width="36" height="56" rx="8" fill="#f97316"/>
+    <!-- Bar -->
+    <rect x="164" y="244" width="184" height="24" rx="12" fill="#f97316"/>
+  </g>
+</svg>
