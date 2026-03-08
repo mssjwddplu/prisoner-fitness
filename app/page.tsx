@@ -41,11 +41,11 @@ export default function Home() {
                   href={`/exercise/${exercise.id}`}
                   className="block bg-zinc-900 border border-zinc-800 rounded-2xl p-5 hover:bg-zinc-800/80 transition-colors active:scale-[0.98]"
                 >
-                  <div className="flex items-center justify-between mb-3">
-                    <h2 className="text-xl font-semibold text-zinc-100">
+                  <div className="flex items-center justify-between mb-3 gap-2">
+                    <h2 className="text-xl font-semibold text-zinc-100 min-w-0">
                       {exercise.name}
                     </h2>
-                    <div className="flex items-center gap-1 text-primary-500 font-medium bg-primary-500/10 px-2.5 py-1 rounded-full text-sm">
+                    <div className="flex items-center gap-1 text-primary-500 font-medium bg-primary-500/10 px-2.5 py-1 rounded-full text-sm shrink-0 whitespace-nowrap">
                       第 {currentLevel} 式
                     </div>
                   </div>
