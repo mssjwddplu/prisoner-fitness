@@ -1,0 +1,5 @@
+{
+  "name": "囚徒健身",
+  "description": "A mobile-friendly tracker for Convict Conditioning (囚徒健身) progress, exercises, and logs.",
+  "requestFramePermissions": []
+}
