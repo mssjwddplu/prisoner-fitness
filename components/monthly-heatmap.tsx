@@ -73,9 +73,9 @@ export function MonthlyHeatmap({ logs, monthsToShow = 12 }: MonthlyHeatmapProps)
       const end = endOfMonth(monthDate);
       const days = eachDayOfInterval({ start, end });
       
-      // Pad beginning of month to align with weekday (Mon-Sun)
+      // Pad beginning of month to align with weekday (Sun-Sat)
       const firstDayOfWeek = getDay(start); // 0 = Sun, 1 = Mon, ..., 6 = Sat
-      const emptyDaysCount = firstDayOfWeek === 0 ? 6 : firstDayOfWeek - 1;
+      const emptyDaysCount = firstDayOfWeek;
       const emptyDays = Array(emptyDaysCount).fill(null);
 
       result.push({
@@ -95,7 +95,7 @@ export function MonthlyHeatmap({ logs, monthsToShow = 12 }: MonthlyHeatmapProps)
           </h3>
           
           <div className="grid grid-cols-7 gap-1.5 mb-2">
-            {['一', '二', '三', '四', '五', '六', '日'].map(day => (
+            {['日', '一', '二', '三', '四', '五', '六'].map(day => (
               <div key={day} className="text-center text-xs text-zinc-500 font-medium">
                 {day}
               </div>
